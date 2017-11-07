@@ -1,0 +1,155 @@
+@import "~normalize-scss/sass/normalize";
+@import "../fonts/font-awesome/scss/font-awesome.scss";
+@import "grid.scss";
+//include variable
+$lightGreen-color: #46b193
+
+$device-xs: 270px
+$device-xsm: 540px
+$device-sm: 768px
+$device-md: 992px
+$device-lg: 1200px
+
+html
+  box-sizing: border-box
+  font-size: 14px
+
+*, *::before, *::after
+  box-sizing: inherit
+
+img
+  width: 100%
+  height: auto
+
+.l-container
+
+//include m-mainNavigation
+.m-mainNavigationMenu
+  display: none
+//include m-mainNavigation
+
+//include m-userOption
+.m-UserOptionMenu
+  display: none
+//include m-userOption
+
+//include m-search
+.m-search
+  padding: 0
+.m-searchInput
+  padding: 0
+  width: 90%
+  border: none
+.m-searchButton
+  width : 10%
+  border: none
+  background-color: white
+  &:hover
+    color: $lightGreen-color
+//include m-search
+
+//include m-cart
+.m-cartIcon
+  position: relative
+  color: $lightGreen-color
+  display: block
+  text-align: right
+  right: 3%
+.m-cartQuantity
+  position: absolute
+  font-size: 0.7em
+  width: 1.2em
+  height: 1.1em
+  text-align: center
+  background: white
+  border-radius: 0.5em
+  border: 1px solid black
+  display: absolute
+  max-height: 1.5em
+  bottom: 1em
+//include m-cart
+
+// include m-titleHead
+.m-titleHead
+  text-align: center
+  padding: 0 35%
+
+
+.m-titleHeadText
+// include m-titleHead
+
+// include m-social
+.m-social
+  text-align: center
+
+.m-socialIconEl
+  display: inline-block
+  margin: 5px
+// include m-social
+
+.m-sentenceBlockJoin
+  position: relative
+
+
+.m-sentenceBlockJoinButton
+  position: absolute
+  top: 50%
+  left: 2%
+  bottom: 50%
+  right: 95%
+  width: 30%
+  height: 4rem
+  z-index: 2
+  font-size: 100%
+
+
+
+.m-sentenceBlockJoinImg
+  z-index: -1
+  width: 100%
+
+.m-sentenceBlockBest
+
+.m-sentenceBlockFood
+
+.m-sentenceBlockSale
+
+
+.m-sentenceBlockArrivalsImg
+  width: 90vw
+
+  @media screen and (min-width: $device-sm)
+    width: 90vw
+
+  @media screen and (min-width: $device-md)
+    width: 100%
+
+  @media screen and (min-width: $device-lg)
+    width: 100%
+
+
+.m-sentenceBlockFavoriteImg
+  width: 90vw
+  @media screen and (min-width: $device-sm)
+    width: 90vw
+
+  @media screen and (min-width: $device-md)
+    width: 100%
+
+  @media screen and (min-width: $device-lg)
+    width: 100%
+
+
+
+.m-sentenceBlockShippingImg
+  width: 90vw
+
+  @media screen and (min-width: $device-sm)
+    width: 90vw
+
+
+  @media screen and  (min-width: $device-md)
+    width: 100%
+
+  @media screen and  (min-width: $device-lg)
+    width: 100%

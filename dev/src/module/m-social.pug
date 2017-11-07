@@ -1,0 +1,8 @@
+-var social = ['fa-facebook', 'fa-twitter', 'fa-google-plus', 'fa-instagram', 'fa-pinterest-p']
+
+
+div( class = "m-social")
+  ul(class="m-socialIcon")
+  each val in social
+    li(class="m-socialIconEl")
+      a(href="#" class="fa" +' '+ val)

@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+    meta(charset = 'utf-8')
+    meta(name='viewport', content="initial-scale=1.0, width=device-width")
+    title WooMagazine
+    body
+      div(class="l-container grid")
+        div( class = "l-head")
+          div(class = "flex-row")
+            div(class = "flex-col-xs-1 flex-col-xm-1")
+              include ./module/m-userOption.pug
+            div(class = "flex-col-xs-10 flex-col-xm-10")
+              include ./module/m-search.pug
+            div(class = "flex-col-xs-11")
+              include ./module/m-cart.pug
+          hr(class = "line")
+          div(class = "flex-col-xs-12")
+            include ./module/m-titleHead.pug
+          div(class = "flex-col-xs-12")
+            include ./module/m-social.pug
+          div(class = "flex-col-xs-12")
+            include ./module/m-mainNavigation.pug
+        div( class = "l-main")
+          include ./module/m-sentenceBlock.pug
+          include ./module/m-sentenceCatUni.pug
+        div( class = "l-footer")
+          

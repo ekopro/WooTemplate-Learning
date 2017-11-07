@@ -1,0 +1,17 @@
+mixin menu(menuName, ...items)
+    li 
+      span= menuName
+      ul
+        each item in items
+          li= item 
+
+
+div( class = "m-mainNavigation")
+  button 
+    span(class="fa fa-bars") Menu
+ul(class = "m-mainNavigationMenu" )
+  +menu("ABOUT US",'Header Setting','Footer Setting','Pages')
+  +menu("STORE",'DOG',"CAT","BIRDS")
+  +menu("TEAM",'VASILIY','ANDREY','SERGEY')
+  +menu("NEWS",'POST FORMAT','BLOG LAYOUT','SIDEBAR SETTING')
+  +menu("Contacts")
