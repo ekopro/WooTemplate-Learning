@@ -27,7 +27,7 @@ module.exports = {
     rules: [
       {
         test: /\.pug$/,
-        loaders: ['pug-loader']
+        loaders: ['pug-loader'],
       },
       {
           test: /\.(png|svg|jpg|gif)$/,

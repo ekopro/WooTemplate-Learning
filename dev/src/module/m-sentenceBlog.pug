@@ -1,0 +1,24 @@
+-var title = "SEE WHAT’S NEW IN OUR BLOG"
+-var data = {
+-  cat1 : ["",""],
+-  cat2 : ["",""],
+-  cat3 : ["",""],
+-  cat4 : ["",""]
+-}
+-//TODO need fix  for require with variable
+
+div
+  h1=title
+  ul
+    each val in data
+      -var imageName = val[0] 
+      -var catName = val[1] 
+      li
+        h2=datePost
+        span
+          span 
+          span  
+        img(src=("./img/" + imageName))
+        h3=titlePost
+        p1=shortAticle 
+        button Read More
