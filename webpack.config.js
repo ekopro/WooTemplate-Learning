@@ -2,7 +2,8 @@ const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-
+//TODO need autoprefixer
+//TODO need browsersync
 
 module.exports = {
   watch: true,

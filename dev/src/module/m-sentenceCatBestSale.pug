@@ -5,16 +5,17 @@
 -  cat3 : ["Easipet-Fabric-Pet-Carrier-Medium-Blue_1-530x430.png","$30.00", "$35.00"],
 -  cat4 : ["Hing-Designs-The-Bone-Bowl-with-Non-Slip-Rubber-Feet-2-530x430.png","$9.00–$10.00", "$13.00–$18.00"]
 -}
+-//TODO need fix  for require with variable
 
 div
-  h1 title
+  h1=title
   ul
     each val in data
       -var imageName = val[0]
       -var priceDis = val[1] 
       -var price = val[2] 
       li
-        img(src=require("./img/" + imageName))
+        img(src=("./img/" + imageName))
         span=priceDis 
         span=price 
         button Add to cart

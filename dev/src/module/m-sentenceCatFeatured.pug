@@ -1,0 +1,20 @@
+-var title = "BROWSE OUR CATEGORIES"
+-var data = {
+-  cat1 : ["category_pic4-430x394.jpg","DOGS"],
+-  cat2 : ["category_pic1-430x394.jpg","CATS"],
+-  cat3 : ["category_pic2-430x394.jpg","BIRDS"],
+-  cat4 : ["category_pic3-430x394.jpg","SMALL PETS"]
+-}
+-//TODO need fix  for require with variable
+
+div
+  h1=title
+  ul
+    each val in data
+      -var imageName = val[0] 
+      -var catName = val[1] 
+      li
+
+        img(src=("./img/" + imageName))
+        span=catName 
+        button # product
