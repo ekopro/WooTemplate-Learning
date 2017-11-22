@@ -1,8 +1,8 @@
 -var title = "SEE WHAT’S NEW IN OUR BLOG"
 -var data = {
--  cat1 : ["",""],
--  cat2 : ["",""],
--  cat3 : ["",""]
+-  cat1 : ["post_img1-536x272.jpg","A Doggie Kiss A Day Keeps the Doctor Away","This above-average dry product has a dry matter protein reading of 38%, a fat level of 13% and estimated carbohydrates"],
+-  cat2 : ["post_img2-536x272.jpg","A Dog’s Short Term Memory is… Pretty Short","Taste of the Wild The Taste of the Wild product line includes seven dry dog foods, and they’re all praised by dog"],
+-  cat3 : ["post_img3-536x272.jpg","Introducing A New Pet To Your Furry Family","Well, to the contrary of how pets generally feel warmer during the cold season of the year, as opposed to us humans"]
 -}
 -//TODO need fix  for require with variable
 
@@ -11,7 +11,8 @@ div
   ul
     each val in data
       -var imageName = val[0] 
-      -var catName = val[1] 
+      -var titlePost = val[1]
+      -var shortAticle = val[2] 
       li
         h2=datePost
         span

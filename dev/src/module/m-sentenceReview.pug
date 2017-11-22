@@ -1,10 +1,13 @@
--var title = "SEE WHAT’S NEW IN OUR BLOG"
+-var title = "WHAT OUR HAPPY CUSTOMER SAY"
 -var data = {
--  cat1 : ["",""]
+-  cat1 : ["quote_img1.jpg","I wanted to personally thank you for all your assistance in getting my giant size dog crate to my shippers. It arrived 28th November. I will definitely recommend your services to all my family and friends. Your prompt attention is greatly appreciated."]
 -}
 -//TODO need fix  for require with variable
-
+-
 div
-  h1=title  
-  img(src=("./img/" + imageName))
-  p1=shortAticle 
+  each val in data
+    -var imageName = val[0]    
+    -var shortAticle = val[1]    
+    h1=title  
+    img(src=("./img/" + imageName))
+    p1=shortAticle 

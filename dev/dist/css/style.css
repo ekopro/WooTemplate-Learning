@@ -2669,6 +2669,14 @@
 .grid-center {
   justify-content: center; }
 
+.button-green {
+  border: 3px solid #46b193;
+  background-color: white;
+  font-size: 1.2em; }
+  .button-green:hover {
+    background-color: #46b193;
+    color: white; }
+
 html {
   box-sizing: border-box;
   font-size: 14px; }
@@ -2679,6 +2687,23 @@ html {
 img {
   width: 100%;
   height: auto; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+.m-text-style-price-right {
+  text-align: right;
+  font-size: 1.5em;
+  color: #46b193; }
+
+.m-text-style-price-left {
+  text-align: left;
+  font-size: 1.5em;
+  text-decoration: line-through;
+  color: grey; }
 
 .m-mainNavigationMenu {
   display: none; }
@@ -2731,6 +2756,20 @@ img {
 .m-socialIconEl {
   display: inline-block;
   margin: 5px; }
+
+.m-socialIconElfa-facebook,
+.m-socialIconElfa-twitter,
+.m-socialIconElfa-google-plus,
+.m-socialIconElfa-instagram,
+.m-socialIconElfa-pinterest-p {
+  text-decoration: none;
+  color: grey; }
+  .m-socialIconElfa-facebook:hover,
+  .m-socialIconElfa-twitter:hover,
+  .m-socialIconElfa-google-plus:hover,
+  .m-socialIconElfa-instagram:hover,
+  .m-socialIconElfa-pinterest-p:hover {
+    color: black; }
 
 .m-sentenceBlockJoin {
   position: relative; }

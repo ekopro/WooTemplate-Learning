@@ -14,8 +14,8 @@ div
       -var imageName = val[0]
       -var priceDis = val[1] 
       -var price = val[2] 
-      li
+      li(class="flex-row flex-row--align-h-center")
         img(src=("./img/" + imageName))
-        span=priceDis 
-        span=price 
-        button Add to cart
+        span(class="flex-col-xs-6 m-text-style-price-right")=priceDis 
+        span(class="flex-col-xs-6 m-text-style-price-left")=price 
+        button(class="button-green") Add to cart
