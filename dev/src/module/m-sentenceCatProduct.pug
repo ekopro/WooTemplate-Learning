@@ -13,7 +13,7 @@ div
     each val in data
       -var imageName = val[0] 
       -var catName = val[1] 
-      li
-        img(src=("./img/" + imageName))
-        span=catName 
-        button # product
+      li(class="m-sentenceCatProductBlock")
+        img(class="m-sentenceCatProductImg" src=("./img/" + imageName))
+        span(class="m-sentenceCatProductName")=catName 
+        button(class="m-sentenceCatProductButton") # product

@@ -2825,4 +2825,36 @@ li {
     .m-sentenceBlockShippingImg {
       width: 100%; } }
 
+.m-sentenceCatBestSaleBorder {
+  border: 1px solid lightgrey; }
+  .m-sentenceCatBestSaleBorder:hover {
+    border: 1px solid #46b193; }
+
+.m-sentenceCatBestSalePriceDis {
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.m-sentenceCatProductBlock {
+  background-color: #46b193;
+  text-align: center;
+  margin-bottom: 2.5em; }
+
+.m-sentenceCatProductButton {
+  background-color: #46b193;
+  border: 4px solid white;
+  height: 2em;
+  width: 40%;
+  margin: 10%;
+  color: white; }
+
+.m-sentenceCatProductName {
+  padding: 1em;
+  display: block;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold; }
+
+.m-sentenceCatProductImg {
+  border-right: 1px solid #46b193; }
+
 /*# sourceMappingURL=style.css.map*/
