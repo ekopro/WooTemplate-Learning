@@ -1,24 +1,24 @@
 -
 -var title = "FEATURED PRODUCTS"
--var data1 = {
--  cat1 : ["Petown-Soft-sided-Pet-Carrier-pet-Carriers-Airline-Approved-2-530x430.png","Petown Soft Sided Pet Carrier Pet Carriers Airline Approved","$69.00","1"],
+-var data = {
+-  cat1 : ["Petown-Soft-sided-Pet-Carrier-pet-Carriers-Airline-Approved-2-530x430.png","Petown Soft Sided Pet Carrier Pet Carriers Airline Approved","$69.00",""],
 -  cat2 : ["TRIXIE-39813-Traveller-Capri-I-Pet-Carrier-48-cm-2-530x430.png","Trixie 39813 Traveller Capri I Pet Carrier 48 Cm","$100.00","$112.00"],
--  cat3 : ["Leopet-KBM001-2grau-Cat-Tree-Scratching-Post-Kitten-Climbing-Excercise-530x430.png","Leopet Kbm001 2grau Cat Tree Scratching Post Kitten Climbing","$65.00","1"],
--  cat4 : ["Popamazing-6-Days-Cat-Dog-Rabbit-Meal-Automatic-Pet-Feeder-6-530x430.png","Popamazing 6 Days Rabbit Meal Automatic Pet Feeder","$46.00","1"]
+-  cat3 : ["Leopet-KBM001-2grau-Cat-Tree-Scratching-Post-Kitten-Climbing-Excercise-530x430.png","Leopet Kbm001 2grau Cat Tree Scratching Post Kitten Climbing","$65.00",""],
+-  cat4 : ["Popamazing-6-Days-Cat-Dog-Rabbit-Meal-Automatic-Pet-Feeder-6-530x430.png","Popamazing 6 Days Rabbit Meal Automatic Pet Feeder","$46.00"," "]
 -}
 -//TODO need fix  for require with variable
 
 div
   h1=title
   ul
-    each val in data1
+    each val in data
       -var imageName = val[0]
       -var nameProduct = val[1]
       -var price = val[2]
       -var priceDis = val[3] 
-      li
+      li(class="flex-row flex-row--align-h-center m-sentenceCatFeaturedBorder")
         img(src=("./img/" + imageName))
-        p1=nameProduct
-        span=price
-        span=priceDis 
-        button Add to cart
+        p1(class="m-sentenceCatFeaturedNameProduct")=nameProduct
+        span(class="flex-col-xs-6 m-text-style-price-right")=price
+        span(class="flex-col-xs-6 m-text-style-price-left  m-sentenceCatFeaturedPriceDis")=priceDis 
+        button(class="button-green") Add to cart

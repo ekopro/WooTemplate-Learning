@@ -10,6 +10,8 @@
   width: 40%
   margin: 10%
   color: white
+
+
 .m-sentenceCatProductName
   padding: 1em
   display: block
@@ -18,3 +20,46 @@
   font-weight: bold
 .m-sentenceCatProductImg
   border-right: 1px solid $lightGreen-color
+
+
+=m-color($color)
+  background-color: $color
+
+=m-border($border-color)
+  border-right: 1px solid $border-color
+
+.m-sentenceCatProductBlockDog,
+.m-sentenceCatProductButtonDog
+  +m-color($lightGreen-color)
+
+.m-sentenceCatProductBlockCats,
+.m-sentenceCatProductButtonCats
+  +m-color($orange-color)
+
+.m-sentenceCatProductBlockBirds,
+.m-sentenceCatProductButtonBirds
+  +m-color($lightMagenta-color)
+
+.m-sentenceCatProductBlockPets,
+.m-sentenceCatProductButtonPets
+  +m-color($lightBlue-color)
+
+.m-sentenceCatProductImgDog
+  +m-border($lightGreen-color)
+.m-sentenceCatProductImgCats
+  +m-border($orange-color)
+.m-sentenceCatProductImgBirds
+  +m-border($lightMagenta-color)
+.m-sentenceCatProductImgPets
+  +m-border($lightBlue-color)
+
+.m-sentenceCatProductBlockDog,
+.m-sentenceCatProductBlockCats,
+.m-sentenceCatProductBlockBirds,
+.m-sentenceCatProductBlockPets,
+.m-sentenceCatProductButtonDog,
+.m-sentenceCatProductButtonCats,
+.m-sentenceCatProductButtonBirds,
+.m-sentenceCatProductButtonPets
+  &:hover
+    background-color: grey

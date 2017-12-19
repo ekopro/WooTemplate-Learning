@@ -1,9 +1,9 @@
 -var title = "BROWSE OUR CATEGORIES"
 -var data = {
--  cat1 : ["category_pic4-430x394.jpg","DOGS"],
--  cat2 : ["category_pic1-430x394.jpg","CATS"],
--  cat3 : ["category_pic2-430x394.jpg","BIRDS"],
--  cat4 : ["category_pic3-430x394.jpg","SMALL PETS"]
+-  cat1 : ["category_pic4-430x394.jpg","DOGS","Dog"],
+-  cat2 : ["category_pic1-430x394.jpg","CATS","Cats"],
+-  cat3 : ["category_pic2-430x394.jpg","BIRDS","Birds"],
+-  cat4 : ["category_pic3-430x394.jpg","SMALL PETS","Pets"]
 -}
 -//TODO need fix  for require with variable
 
@@ -13,7 +13,8 @@ div
     each val in data
       -var imageName = val[0] 
       -var catName = val[1] 
-      li(class="m-sentenceCatProductBlock")
-        img(class="m-sentenceCatProductImg" src=("./img/" + imageName))
+      -var className = val[2]
+      li(class="m-sentenceCatProductBlock m-sentenceCatProductBlock" + className)
+        img(class="m-sentenceCatProductImg m-sentenceCatProductImg"+className src=("./img/" + imageName))
         span(class="m-sentenceCatProductName")=catName 
-        button(class="m-sentenceCatProductButton") # product
+        button(class="m-sentenceCatProductButton m-sentenceCatProductButton" +className) # product

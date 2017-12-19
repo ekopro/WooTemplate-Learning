@@ -2672,7 +2672,8 @@
 .button-green {
   border: 3px solid #46b193;
   background-color: white;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  margin: .9em; }
   .button-green:hover {
     background-color: #46b193;
     color: white; }
@@ -2856,5 +2857,58 @@ li {
 
 .m-sentenceCatProductImg {
   border-right: 1px solid #46b193; }
+
+.m-sentenceCatProductBlockDog,
+.m-sentenceCatProductButtonDog {
+  background-color: #46b193; }
+
+.m-sentenceCatProductBlockCats,
+.m-sentenceCatProductButtonCats {
+  background-color: #ffcc00; }
+
+.m-sentenceCatProductBlockBirds,
+.m-sentenceCatProductButtonBirds {
+  background-color: #f75259; }
+
+.m-sentenceCatProductBlockPets,
+.m-sentenceCatProductButtonPets {
+  background-color: #4cadd7; }
+
+.m-sentenceCatProductImgDog {
+  border-right: 1px solid #46b193; }
+
+.m-sentenceCatProductImgCats {
+  border-right: 1px solid #ffcc00; }
+
+.m-sentenceCatProductImgBirds {
+  border-right: 1px solid #f75259; }
+
+.m-sentenceCatProductImgPets {
+  border-right: 1px solid #4cadd7; }
+
+.m-sentenceCatProductBlockDog:hover,
+.m-sentenceCatProductBlockCats:hover,
+.m-sentenceCatProductBlockBirds:hover,
+.m-sentenceCatProductBlockPets:hover,
+.m-sentenceCatProductButtonDog:hover,
+.m-sentenceCatProductButtonCats:hover,
+.m-sentenceCatProductButtonBirds:hover,
+.m-sentenceCatProductButtonPets:hover {
+  background-color: grey; }
+
+.m-sentenceCatFeaturedBorder {
+  border: 1px solid lightgrey; }
+  .m-sentenceCatFeaturedBorder:hover {
+    border: 1px solid #46b193; }
+
+.m-sentenceCatFeaturedPriceDis {
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.m-sentenceCatFeaturedNameProduct {
+  font-size: 1.5em;
+  text-align: center;
+  padding-left: 0.7em;
+  padding-right: 0.7em; }
 
 /*# sourceMappingURL=style.css.map*/
