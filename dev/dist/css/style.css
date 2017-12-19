@@ -2673,7 +2673,8 @@
   border: 3px solid #46b193;
   background-color: white;
   font-size: 1.2em;
-  margin: .9em; }
+  margin: .9em;
+  color: #46b193; }
   .button-green:hover {
     background-color: #46b193;
     color: white; }
@@ -2910,5 +2911,14 @@ li {
   text-align: center;
   padding-left: 0.7em;
   padding-right: 0.7em; }
+
+.m-sentenceBlogPost {
+  text-align: center;
+  padding-left: .5em;
+  padding-right: .5em; }
+
+.m-sentenceBlogButton {
+  display: block;
+  margin: .5em auto; }
 
 /*# sourceMappingURL=style.css.map*/

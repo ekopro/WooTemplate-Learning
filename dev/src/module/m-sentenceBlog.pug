@@ -13,7 +13,7 @@ div
       -var imageName = val[0] 
       -var titlePost = val[1]
       -var shortAticle = val[2] 
-      li
+      li(class="m-sentenceBlogPost")
         h2=datePost
         span
           span 
@@ -21,4 +21,4 @@ div
         img(src=("./img/" + imageName))
         h3=titlePost
         p1=shortAticle 
-        button Read More
+        button(class="button-green m-sentenceBlogButton") Read More
