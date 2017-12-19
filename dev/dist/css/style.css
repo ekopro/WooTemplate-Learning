@@ -2707,6 +2707,11 @@ li {
   text-decoration: line-through;
   color: grey; }
 
+.l-footer {
+  background-color: grey;
+  color: white;
+  padding: 2em; }
+
 .m-mainNavigationMenu {
   display: none; }
 
@@ -2920,5 +2925,16 @@ li {
 .m-sentenceBlogButton {
   display: block;
   margin: .5em auto; }
+
+.m-sentenceReviewPost {
+  text-align: center;
+  padding: 0.5em;
+  background-color: lightgrey; }
+
+.m-sentenceReviewImg {
+  border-radius: 100%;
+  width: 50%;
+  display: block;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map*/

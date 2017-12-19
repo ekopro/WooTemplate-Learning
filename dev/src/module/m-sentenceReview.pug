@@ -7,7 +7,8 @@
 div
   each val in data
     -var imageName = val[0]    
-    -var shortAticle = val[1]    
-    h1=title  
-    img(src=("./img/" + imageName))
-    p1=shortAticle 
+    -var shortAticle = val[1]
+    div(class="m-sentenceReviewPost")    
+      h1=title  
+      img(class="m-sentenceReviewImg" src=("./img/" + imageName))
+      p1=shortAticle 
