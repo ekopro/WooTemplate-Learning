@@ -2684,7 +2684,9 @@ html {
   font-size: 14px; }
 
 *, *::before, *::after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
 
 img {
   width: 100%;
@@ -2710,7 +2712,7 @@ li {
 .l-footer {
   background-color: #181A1F;
   color: white;
-  padding: 2em; }
+  padding-top: 2em; }
 
 .m-mainNavigationMenu {
   display: none; }
@@ -2939,7 +2941,8 @@ li {
 
 .m-searchFooter {
   background-color: #181A1F;
-  padding-bottom: 3em; }
+  padding-bottom: 3em;
+  padding-left: 2em; }
 
 .m-searchFooterTitle {
   color: #46b193;
@@ -2957,5 +2960,10 @@ li {
   height: 2.5em;
   width: 40%;
   padding-left: 5%; }
+
+.m-footerCopyright {
+  background-color: #222326;
+  padding: 1em;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map*/
