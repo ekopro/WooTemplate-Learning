@@ -2708,7 +2708,7 @@ li {
   color: grey; }
 
 .l-footer {
-  background-color: grey;
+  background-color: #181A1F;
   color: white;
   padding: 2em; }
 
@@ -2929,12 +2929,33 @@ li {
 .m-sentenceReviewPost {
   text-align: center;
   padding: 0.5em;
-  background-color: lightgrey; }
+  background-color: #F9F6F7; }
 
 .m-sentenceReviewImg {
   border-radius: 100%;
   width: 50%;
   display: block;
   margin: 0 auto; }
+
+.m-searchFooter {
+  background-color: #181A1F;
+  padding-bottom: 3em; }
+
+.m-searchFooterTitle {
+  color: #46b193;
+  padding-bottom: 1em; }
+
+.m-searchFooterButton {
+  height: 2.5em;
+  width: 2.5em;
+  color: white;
+  background-color: orange; }
+  .m-searchFooterButton:hover {
+    color: white; }
+
+.m-searchFooterInput {
+  height: 2.5em;
+  width: 40%;
+  padding-left: 5%; }
 
 /*# sourceMappingURL=style.css.map*/
