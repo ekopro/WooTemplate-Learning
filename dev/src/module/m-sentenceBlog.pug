@@ -8,12 +8,12 @@
 
 div
   h1=title
-  ul
+  ul(class="row")
     each val in data
       -var imageName = val[0] 
       -var titlePost = val[1]
       -var shortAticle = val[2] 
-      li(class="m-sentenceBlogPost")
+      li(class="col-xs-4 col-sm-2 col-md-2 col-lg-2 m-sentenceBlogPost")
         h2=datePost
         span
           span 

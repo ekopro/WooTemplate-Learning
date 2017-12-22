@@ -9,12 +9,12 @@
 
 div
   h1=title
-  ul
+  ul(class="row")
     each val in data
       -var imageName = val[0] 
       -var catName = val[1] 
       -var className = val[2]
-      li(class="m-sentenceCatProductBlock m-sentenceCatProductBlock" + className)
+      li(class="col-xs-4 col-sm-2 col-md-1 col-lg-1 m-sentenceCatProductBlock m-sentenceCatProductBlock" + className)
         img(class="m-sentenceCatProductImg m-sentenceCatProductImg"+className src=("./img/" + imageName))
         span(class="m-sentenceCatProductName")=catName 
         button(class="m-sentenceCatProductButton m-sentenceCatProductButton" +className) # product

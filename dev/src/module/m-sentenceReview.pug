@@ -1,6 +1,6 @@
 -var title = "WHAT OUR HAPPY CUSTOMER SAY"
 -var data = {
--  cat1 : ["quote_img1.jpg","I wanted to personally thank you for all your assistance in getting my giant size dog crate to my shippers. It arrived 28th November. I will definitely recommend your services to all my family and friends. Your prompt attention is greatly appreciated."]
+-  cat1 : ["quote_img1.jpg","I wanted to personally thank you for all your assistance in getting my giant size dog crate to my shippers. It arrived 28th November. I will definitely recommend your services to all my family and friends. Your prompt attention is greatly appreciated.","Samanta Martins"]
 -}
 -//TODO need fix  for require with variable
 -
@@ -8,7 +8,9 @@ div
   each val in data
     -var imageName = val[0]    
     -var shortAticle = val[1]
+    -var nameReviewer = val[2]
     div(class="m-sentenceReviewPost")    
       h1=title  
       img(class="m-sentenceReviewImg" src=("./img/" + imageName))
-      p1=shortAticle 
+      p1=shortAticle
+      p(class="m-sentenceReviewName")=nameReviewer 

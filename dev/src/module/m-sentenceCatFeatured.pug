@@ -10,15 +10,15 @@
 
 div
   h1=title
-  ul
+  ul(class="row")
     each val in data
       -var imageName = val[0]
       -var nameProduct = val[1]
       -var price = val[2]
       -var priceDis = val[3] 
-      li(class="flex-row flex-row--align-h-center m-sentenceCatFeaturedBorder")
+      li(class="col-xs-4 col-sm-2 col-md-2 col-lg-2 m-sentenceCatFeaturedBorder")
         img(src=("./img/" + imageName))
         p1(class="m-sentenceCatFeaturedNameProduct")=nameProduct
-        span(class="flex-col-xs-6 m-text-style-price-right")=price
-        span(class="flex-col-xs-6 m-text-style-price-left  m-sentenceCatFeaturedPriceDis")=priceDis 
+        span(class="m-text-style-price-right")=price
+        span(class="m-text-style-price-left  m-sentenceCatFeaturedPriceDis")=priceDis 
         button(class="button-green") Add to cart
