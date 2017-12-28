@@ -19,6 +19,7 @@ div
       li(class="col-xs-12 col-sm-6 col-md-6 col-lg-6 m-sentenceCatFeaturedBorder")
         img(src=("./img/" + imageName))
         p1(class="m-sentenceCatFeaturedNameProduct")=nameProduct
-        span(class="m-text-style-price-right")=price
-        span(class="m-text-style-price-left  m-sentenceCatFeaturedPriceDis")=priceDis 
-        button(class="button-green") Add to cart
+        span(class="m-sentenceCatFeaturedPricing")
+          span(class="m-sentenceCatFeaturedPrice")=price
+          span(class="m-sentenceCatFeaturedPriceDis")=priceDis 
+        button(class="button-green m-sentenceCatFeaturedButton") Add to cart

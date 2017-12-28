@@ -1,16 +1,38 @@
 
 .m-sentenceCatFeaturedBorder
+  text-align: center
   border: 1px solid lightgrey
   &:hover
     border: 1px solid $lightGreen-color
 
 
-.m-sentenceCatFeaturedPriceDis
+.m-sentenceCatFeaturedPricing
+  font-family: $work-sans
+  display: block
+  white-space: nowrap
   overflow: hidden
   text-overflow: ellipsis
+  color: $lightGreen-color
+
+.m-sentenceCatFeaturedPriceDis,
+.m-sentenceCatFeaturedPrice
+  font-size: 1.5rem
+  font-weight: bold
+  margin: .4rem
+  text-align: center
+
+.m-sentenceCatFeaturedPriceDis
+  text-decoration: line-through
+  font-family: $work-sans
+  color: grey
 
 .m-sentenceCatFeaturedNameProduct
   font-size: 1.5em
   text-align: center
   padding-left: 0.7em
   padding-right: 0.7em
+
+.m-sentenceCatFeaturedButton
+  padding: .5rem
+  display: block
+  margin: 1rem auto

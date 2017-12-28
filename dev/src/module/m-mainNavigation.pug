@@ -7,7 +7,7 @@ mixin menu(menuName, ...items)
 
 
 div( class = "m-mainNavigation")
-  button 
+  button(class = "m-mainNavigationButton") 
     span(class="fa fa-bars")   Menu
 ul(class = "m-mainNavigationMenu" )
   +menu("ABOUT US",'Header Setting','Footer Setting','Pages')

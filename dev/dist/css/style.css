@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Six+Caps|Open+Sans|Montserrat|Lato|Work+Sans);@charset "UTF-8";
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -8,7 +8,7 @@
 @font-face {
   font-family: 'FontAwesome';
   src: url(../fonts/674f50d287a8c48dc19ba404d20fe713.eot);
-  src: url(../fonts/674f50d287a8c48dc19ba404d20fe713.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(../fonts/af7ae505a9eed503f8b8e6982036873e.woff2) format("woff2"), url(../fonts/fee66e712a8a08eef5805a46892932ad.woff) format("woff"), url(../fonts/b06871f281fee6b241d60582ae9369b9.ttf) format("truetype"), url(../fonts/acf3dcb7ff752b5296ca23ba2c7c2606.svg#fontawesomeregular) format("svg");
+  src: url(../fonts/674f50d287a8c48dc19ba404d20fe713.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(../fonts/af7ae505a9eed503f8b8e6982036873e.woff2) format("woff2"), url(../fonts/fee66e712a8a08eef5805a46892932ad.woff) format("woff"), url(../fonts/b06871f281fee6b241d60582ae9369b9.ttf) format("truetype"), url(../fonts/912ec66d7572ff821749319396470bde.svg#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2697,7 +2697,10 @@
   background-color: white;
   font-size: 1.2em;
   margin: .9em;
-  color: #46b193; }
+  color: #46b193;
+  padding: .5rem;
+  display: block;
+  margin: 1rem auto; }
   .button-green:hover {
     background-color: #46b193;
     color: white; }
@@ -2733,7 +2736,7 @@ li {
   color: grey; }
 
 .l-container {
-  padding: 1rem; }
+  padding-top: 1rem; }
 
 .l-footer {
   background-color: #181A1F;
@@ -2742,6 +2745,13 @@ li {
 
 .m-mainNavigationMenu {
   display: none; }
+
+.m-mainNavigationButton {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 1.42rem;
+  background-color: white;
+  border: none; }
 
 .m-UserOptionMenu {
   display: none; }
@@ -2786,14 +2796,20 @@ li {
 
 .m-titleHead {
   text-align: center;
-  padding: 0 35%; }
+  font-family: "Six Caps", sans-serif;
+  font-size: 4.28rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  padding: 1rem 4.5rem; }
 
 .m-social {
   text-align: center; }
 
 .m-socialIconEl {
   display: inline-block;
-  margin: 5px; }
+  padding: 1.1rem;
+  font-family: "Lato", sans-serif; }
 
 .m-socialIconElfa-facebook,
 .m-socialIconElfa-twitter,
@@ -2810,31 +2826,58 @@ li {
     color: black; }
 
 .m-sentenceBlockJoin {
-  position: relative; }
+  position: relative;
+  padding: 0; }
 
 .m-sentenceBlockJoinButton {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 2%;
-  bottom: 50%;
+  bottom: 60%;
   right: 95%;
-  width: 30%;
-  height: 4rem;
+  width: 35%;
+  height: 2rem;
   z-index: 2;
-  font-size: 100%; }
+  font-size: 100%;
+  color: white;
+  background-color: #46b193;
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .m-sentenceBlockJoinImg {
   z-index: -1;
-  width: 100%; }
+  width: 120%; }
 
 .m-sentenceCatBestSaleBorder {
+  text-align: center;
   border: 1px solid lightgrey; }
   .m-sentenceCatBestSaleBorder:hover {
     border: 1px solid #46b193; }
 
-.m-sentenceCatBestSalePriceDis {
+.m-sentenceCatBestSalePricing {
+  font-family: "Work Sans", sans-serif;
+  display: block;
+  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  color: #46b193; }
+
+.m-sentenceCatBestSalePriceDis,
+.m-sentenceCatBestSalePrice {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: .4rem;
+  text-align: center; }
+
+.m-sentenceCatBestSalePriceDis {
+  text-decoration: line-through;
+  font-family: "Work Sans", sans-serif;
+  color: grey; }
+
+.m-sentenceCatBestSaleButton {
+  padding: .5rem;
+  display: block;
+  margin: 1rem auto; }
 
 .m-sentenceCatProductBlock {
   background-color: #46b193;
@@ -2900,19 +2943,41 @@ li {
   background-color: grey; }
 
 .m-sentenceCatFeaturedBorder {
+  text-align: center;
   border: 1px solid lightgrey; }
   .m-sentenceCatFeaturedBorder:hover {
     border: 1px solid #46b193; }
 
-.m-sentenceCatFeaturedPriceDis {
+.m-sentenceCatFeaturedPricing {
+  font-family: "Work Sans", sans-serif;
+  display: block;
+  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  color: #46b193; }
+
+.m-sentenceCatFeaturedPriceDis,
+.m-sentenceCatFeaturedPrice {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: .4rem;
+  text-align: center; }
+
+.m-sentenceCatFeaturedPriceDis {
+  text-decoration: line-through;
+  font-family: "Work Sans", sans-serif;
+  color: grey; }
 
 .m-sentenceCatFeaturedNameProduct {
   font-size: 1.5em;
   text-align: center;
   padding-left: 0.7em;
   padding-right: 0.7em; }
+
+.m-sentenceCatFeaturedButton {
+  padding: .5rem;
+  display: block;
+  margin: 1rem auto; }
 
 .m-sentenceBlogPost {
   text-align: center;
