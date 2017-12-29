@@ -8,7 +8,9 @@
 -//TODO need fix  for require with variable
 
 div
-  h1=title
+  h1(class="m-sentenceCatBestSaleTitle") 
+    span(class="m-sentenceCatBestSaleText") PRODUCTS 
+    span ON SALE
   ul(class="row")
     each val in data
       -var imageName = val[0]
@@ -19,4 +21,5 @@ div
         span(class="m-sentenceCatBestSalePricing")
           span(class="m-sentenceCatBestSalePrice")=price
           span(class="m-sentenceCatBestSalePriceDis")=priceDis 
-        button(class="button-green m-sentenceCatBestSaleButton") Add to cart
+        button(class="button-green m-sentenceCatBestSaleButton") 
+          span(class="fa fa-shopping-cart")  Add to cart
