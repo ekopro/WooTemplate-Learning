@@ -3040,4 +3040,16 @@ li {
   padding: 1em;
   text-align: center; }
 
+.m-buttonCompareFav {
+  margin: 1rem;
+  color: #46b193; }
+
+.m-buttonCompareFavIcon {
+  transform: scale(1.5);
+  margin: .5rem 1rem; }
+
+.m-buttonCompareFavIconReverse {
+  margin: .5rem 1rem;
+  transform: rotate(270deg) scale(1.3, -1.3); }
+
 /*# sourceMappingURL=style.css.map*/
