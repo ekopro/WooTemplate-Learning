@@ -2830,6 +2830,10 @@ li {
   .m-socialIconElfa-pinterest-p:hover {
     color: black; }
 
+.m-sentenceBlock {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
 .m-sentenceBlockJoin {
   position: relative;
   padding: 0; }
