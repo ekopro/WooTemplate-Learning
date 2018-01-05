@@ -8,7 +8,9 @@
 -//TODO need fix  for require with variable
 
 div
-  h1=title
+  h1(class="m-sentenceCatProductTitle")
+    span(class="m-sentenceCatProductText") BROWSE
+    span  OUR CATEGORIES
   ul(class="row")
     each val in data
       -var imageName = val[0] 

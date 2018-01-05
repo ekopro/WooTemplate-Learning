@@ -2831,8 +2831,8 @@ li {
     color: black; }
 
 .m-sentenceBlock {
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
 
 .m-sentenceBlockJoin {
   position: relative;
@@ -2888,7 +2888,11 @@ li {
     border: 1px solid #46b193; }
 
 .m-sentenceCatBestSaleTitle {
-  text-align: center; }
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 4rem 0; }
 
 .m-sentenceCatBestSaleText {
   color: #46b193; }
@@ -2917,6 +2921,16 @@ li {
   padding: .5rem;
   display: block;
   margin: 1rem auto; }
+
+.m-sentenceCatProductTitle {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 4rem 0; }
+
+.m-sentenceCatProductText {
+  color: #46b193; }
 
 .m-sentenceCatProductBlock {
   background-color: #46b193;
@@ -2978,6 +2992,16 @@ li {
 .m-sentenceCatProductButtonBirds:hover,
 .m-sentenceCatProductButtonPets:hover {
   background-color: grey; }
+
+.m-sentenceCatFeaturedTitle {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 4rem 0; }
+
+.m-sentenceCatFeaturedText {
+  color: #46b193; }
 
 .m-sentenceCatFeaturedBorder {
   text-align: center;

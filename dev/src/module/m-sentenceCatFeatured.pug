@@ -1,4 +1,3 @@
--
 -var title = "FEATURED PRODUCTS"
 -var data = {
 -  cat1 : ["Petown-Soft-sided-Pet-Carrier-pet-Carriers-Airline-Approved-2-530x430.png","Petown Soft Sided Pet Carrier Pet Carriers Airline Approved","$69.00",""],
@@ -9,7 +8,9 @@
 -//TODO need fix  for require with variable
 
 div
-  h1=title
+  h1(class="m-sentenceCatFeaturedTitle")
+    span(class="m-sentenceCatFeaturedText") FEATURED
+    span  PRODUCTS
   ul(class="row")
     each val in data
       -var imageName = val[0]
