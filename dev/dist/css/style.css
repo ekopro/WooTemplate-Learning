@@ -2735,6 +2735,9 @@ li {
   text-decoration: line-through;
   color: grey; }
 
+.l-head {
+  margin: 0 1rem; }
+
 .l-container {
   padding-top: 1rem; }
 
@@ -2813,8 +2816,7 @@ li {
 
 .m-socialIconEl {
   display: inline-block;
-  padding: 1.1rem;
-  font-family: "Lato", sans-serif; }
+  padding: 1.1rem; }
 
 .m-socialIconElfa-facebook,
 .m-socialIconElfa-twitter,
@@ -2822,7 +2824,8 @@ li {
 .m-socialIconElfa-instagram,
 .m-socialIconElfa-pinterest-p {
   text-decoration: none;
-  color: grey; }
+  color: grey;
+  font-size: 1.3rem; }
   .m-socialIconElfa-facebook:hover,
   .m-socialIconElfa-twitter:hover,
   .m-socialIconElfa-google-plus:hover,
@@ -2844,33 +2847,46 @@ li {
   left: 2%;
   bottom: 70%;
   right: 95%;
-  width: 30vw;
-  height: 10vh;
+  width: 35vw;
+  height: 8vh;
   z-index: 2;
-  font-size: 4vw;
+  font-size: 4.5vw;
   color: white;
   background-color: #46b193;
   text-transform: uppercase;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  line-height: normal; }
+
+@media only screen and (min-width: 540px) {
+  .m-sentenceBlockJoinButton {
+    top: 50%;
+    font-size: 2.5vw;
+    width: 20vw;
+    height: 7vh;
+    line-height: 0.5; } }
 
 @media only screen and (min-width: 768px) {
   .m-sentenceBlockJoinButton {
-    font-size: 3vw;
-    width: 25vw;
-    height: 10vh; } }
+    top: 50%;
+    font-size: 2.5vw;
+    width: 20vw;
+    height: 7vh;
+    line-height: 0.5; } }
 
 @media only screen and (min-width: 992px) {
   .m-sentenceBlockJoinButton {
-    font-size: 2.5vw;
-    width: 20vw;
-    height: 5vh; } }
+    top: 50%;
+    font-size: 2vw;
+    width: 15vw;
+    height: 7vh; } }
 
 @media only screen and (min-width: 1200px) {
   .m-sentenceBlockJoinButton {
-    font-size: 2vw;
-    width: 15vw;
-    height: 10vh; } }
+    top: 50%;
+    font-size: 1.5vw;
+    width: 13vw;
+    height: 7vh; } }
 
 .m-sentenceBlockJoinImg {
   z-index: -1;
