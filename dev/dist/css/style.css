@@ -3125,11 +3125,28 @@ li {
   border-radius: 100%;
   width: 35%;
   display: block;
-  margin: 0 auto; }
+  margin: 1rem auto;
+  border: 5px solid white; }
+
+@media only screen and (min-width: 768px) {
+  .m-sentenceReviewImg {
+    width: 20%;
+    margin: 1rem auto; } }
+
+@media only screen and (min-width: 992px) {
+  .m-sentenceReviewImg {
+    width: 20%;
+    margin: 1rem auto; } }
+
+@media only screen and (min-width: 1200px) {
+  .m-sentenceReviewImg {
+    width: 15%;
+    margin: 1rem auto; } }
 
 .m-sentenceReviewName {
   padding: .5em;
-  color: #46b193; }
+  color: #46b193;
+  font-size: 1.5rem; }
 
 .m-sentenceReviewTitle {
   font-family: "Work Sans", sans-serif;
@@ -3139,6 +3156,15 @@ li {
   margin: 4rem 0; }
 
 .m-sentenceReviewText {
+  color: #46b193; }
+
+.m-sentenceReviewAticle {
+  padding: 0 1rem;
+  font-size: 1.3rem; }
+
+.m-sentenceReviewIcon {
+  padding: 1rem;
+  font-size: 2rem;
   color: #46b193; }
 
 .m-searchFooter {
