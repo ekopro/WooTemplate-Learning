@@ -3056,7 +3056,14 @@ li {
   display: block;
   margin: 1rem auto; }
 
+.m-sentenceBlog {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  margin-bottom: 4rem; }
+
 .m-sentenceBlogPost {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   text-align: center;
   padding-left: .5em;
   padding-right: .5em; }
@@ -3064,6 +3071,50 @@ li {
 .m-sentenceBlogButton {
   display: block;
   margin: .5em auto; }
+
+.m-sentenceBlogContainerImg {
+  position: relative; }
+
+.m-sentenceBlogAnimation {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transition: all 0.3s ease; }
+
+.m-sentenceBlogTitle {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 2rem 0; }
+
+.m-sentenceBlogText {
+  color: #46b193; }
+
+.m-sentenceBlogServiceInformation {
+  margin: 1rem; }
+
+.m-sentenceBlogDatePost {
+  font-family: inherit;
+  font-size: 2rem;
+  color: #46b193;
+  margin: 1rem; }
+
+.m-sentenceBlogPostedStaff {
+  margin: 1rem; }
+
+.m-sentenceBlogPostedStaffName {
+  font-weight: 900;
+  color: black; }
+
+.m-sentenceBlogCommentsQuantity {
+  color: black;
+  font-weight: 900;
+  margin: 1rem; }
 
 .m-sentenceReviewPost {
   text-align: center;
@@ -3078,6 +3129,16 @@ li {
 
 .m-sentenceReviewName {
   padding: .5em;
+  color: #46b193; }
+
+.m-sentenceReviewTitle {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 4rem 0; }
+
+.m-sentenceReviewText {
   color: #46b193; }
 
 .m-searchFooter {

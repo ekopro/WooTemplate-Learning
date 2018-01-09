@@ -1,26 +1,34 @@
 -var title = "SEE WHAT’S NEW IN OUR BLOG"
 -var data = {
--  cat1 : ["post_img1-536x272.jpg","A Doggie Kiss A Day Keeps the Doctor Away","This above-average dry product has a dry matter protein reading of 38%, a fat level of 13% and estimated carbohydrates"],
--  cat2 : ["post_img2-536x272.jpg","A Dog’s Short Term Memory is… Pretty Short","Taste of the Wild The Taste of the Wild product line includes seven dry dog foods, and they’re all praised by dog"],
--  cat3 : ["post_img3-536x272.jpg","Introducing A New Pet To Your Furry Family","Well, to the contrary of how pets generally feel warmer during the cold season of the year, as opposed to us humans"]
+-  cat1 : ["post_img1-536x272.jpg","A Doggie Kiss A Day Keeps the Doctor Away","This above-average dry product has a dry matter protein reading of 38%, a fat level of 13% and estimated carbohydrates","22 December","Amin","0"],
+-  cat2 : ["post_img2-536x272.jpg","A Dog’s Short Term Memory is… Pretty Short","Taste of the Wild The Taste of the Wild product line includes seven dry dog foods, and they’re all praised by dog","22 December","Admin","0"],
+-  cat3 : ["post_img3-536x272.jpg","Introducing A New Pet To Your Furry Family","Well, to the contrary of how pets generally feel warmer during the cold season of the year, as opposed to us humans","22 December","Amdin","0"]
 -}
 -//TODO need fix  for require with variable
 
-div
-  h1=title
+div(class="m-sentenceBlog")
+  h1(class="m-sentenceBlogTitle")
+    span(class="m-sentenceBlogText") SEE WHAT’S NEW
+    span  IN OUR BLOG
   ul(class="row")
     each val in data
       -var imageName = val[0] 
       -var titlePost = val[1]
-      -var shortAticle = val[2] 
+      -var shortAticle = val[2]
+      -var datePost = val[3]
+      -var postedStaff = val[4]
+      -var commentsQuantity = val[5] 
       li(class="col-xs-12 col-sm-4 col-md-4 col-lg-4 m-sentenceBlogPost")
-        h2=datePost
-        span
-          span 
-          span
+        h2(class="m-sentenceBlogDatePost")=datePost
+        div(class="m-sentenceBlogServiceInformation")
+          span(class="m-sentenceBlogPostedStaff") Posted by 
+            span(class="m-sentenceBlogPostedStaffName")=postedStaff
+          span •
+          span(class="m-sentenceBlogCommentsQuantity")=commentsQuantity    
+            span  Comments  
         div(class="m-sentenceBlogContainerImg")
-          div(class="m-sentenceBlogAnimation")  
-            img(src=("./img/" + imageName))
+          div(class="m-sentenceBlogAnimation")   
+          img(class="m-sentenceBlogImg" src=("./img/" + imageName))
         h3=titlePost
         p1=shortAticle 
         button(class="button-green m-sentenceBlogButton") Read More
