@@ -2736,7 +2736,7 @@ li {
   color: grey; }
 
 .l-head {
-  margin: 0 1rem; }
+  margin: 0 .7rem; }
 
 .l-container {
   padding-top: 1rem; }
@@ -2751,8 +2751,9 @@ li {
 
 .m-mainNavigationButton {
   font-family: "Montserrat", sans-serif;
+  font-weight: 900;
   color: black;
-  font-size: 1.42rem;
+  font-size: 1.6rem;
   background-color: white;
   border: none; }
 
@@ -2763,11 +2764,13 @@ li {
   font-size: 1.42rem; }
 
 .m-search {
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  padding-left: 1rem; }
 
 .m-searchInput {
   padding: 0;
   width: 90%;
+  height: 1.9rem;
   border: none; }
 
 .m-searchButton {
@@ -2787,7 +2790,8 @@ li {
   color: #46b193;
   display: block;
   text-align: right;
-  right: 3%; }
+  right: 4%;
+  font-size: 1.3rem; }
 
 .m-cartQuantity {
   position: absolute;
@@ -2798,7 +2802,7 @@ li {
   border-radius: 100%;
   border: 1px solid black;
   max-height: 1.5rem;
-  bottom: .6rem;
+  bottom: .7rem;
   text-align: center;
   line-height: 1.1rem; }
 
@@ -2809,10 +2813,17 @@ li {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.5rem;
-  padding: 1rem 4.5rem; }
+  padding: 1rem 30%;
+  border-top: 1px solid lightgrey;
+  margin: 0 -1rem; }
+
+@media only screen and (min-width: 320px) {
+  .m-titleHead {
+    padding: 1rem 40%; } }
 
 .m-social {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 3rem; }
 
 .m-socialIconEl {
   display: inline-block;
@@ -2825,7 +2836,7 @@ li {
 .m-socialIconElfa-pinterest-p {
   text-decoration: none;
   color: grey;
-  font-size: 1.3rem; }
+  font-size: 1.2rem; }
   .m-socialIconElfa-facebook:hover,
   .m-socialIconElfa-twitter:hover,
   .m-socialIconElfa-google-plus:hover,
@@ -2834,7 +2845,7 @@ li {
     color: black; }
 
 .m-sentenceBlock {
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 4rem; }
 
 .m-sentenceBlockJoin {
@@ -2890,8 +2901,8 @@ li {
 
 .m-sentenceBlockJoinImg {
   z-index: -1;
-  width: 120%;
-  overflow: hidden; }
+  overflow: hidden;
+  transform: scale(1.3); }
 
 @media only screen and (min-width: 768px) {
   .m-sentenceBlockJoinImg {
@@ -2899,6 +2910,11 @@ li {
 
 .m-sentenceBlockCatLink {
   margin: 4rem .7rem; }
+
+.m-sentenceBlockArrivals,
+.m-sentenceBlockFavorite,
+.m-sentenceBlockShipping {
+  margin-bottom: 1rem; }
 
 .m-sentenceCatBestSaleBorder {
   text-align: center;
@@ -3076,10 +3092,12 @@ li {
 
 .m-sentenceBlogButton {
   display: block;
+  width: 9rem;
   margin: .5em auto; }
 
 .m-sentenceBlogContainerImg {
-  position: relative; }
+  position: relative;
+  margin-bottom: 1rem; }
 
 .m-sentenceBlogAnimation {
   position: absolute;
@@ -3094,7 +3112,7 @@ li {
 .m-sentenceBlogTitle {
   font-family: "Work Sans", sans-serif;
   font-weight: 900;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   text-align: center;
   margin: 2rem 0; }
 
@@ -3114,13 +3132,18 @@ li {
   margin: 1rem; }
 
 .m-sentenceBlogPostedStaffName {
+  font-size: 1.1rem;
   font-weight: 900;
   color: black; }
 
 .m-sentenceBlogCommentsQuantity {
+  font-size: 1.1rem;
   color: black;
   font-weight: 900;
   margin: 1rem; }
+
+.m-sentenceBlogShortAticle {
+  font-size: 1.1rem; }
 
 .m-sentenceReviewPost {
   text-align: center;
