@@ -2906,7 +2906,11 @@ li {
 
 @media only screen and (min-width: 768px) {
   .m-sentenceBlockJoinImg {
-    width: 100%; } }
+    transform: scale(1); } }
+
+@media only screen and (min-width: 1200px) {
+  .m-sentenceBlockJoinImg {
+    transform: scale(1); } }
 
 .m-sentenceBlockCatLink {
   margin: 4rem .7rem; }
@@ -2918,10 +2922,10 @@ li {
 
 .m-sentenceCatBestSaleBorder {
   text-align: center;
-  border: 2px solid lightgrey;
-  margin: 0.4rem 1rem; }
+  border: 1px solid lightgrey;
+  margin: 0.4rem 0.00rem; }
   .m-sentenceCatBestSaleBorder:hover {
-    border: 2px solid #46b193; }
+    border: 1px solid #46b193; }
 
 .m-sentenceCatBestSaleTitle {
   font-family: "Work Sans", sans-serif;
@@ -2972,7 +2976,7 @@ li {
   background-color: #46b193;
   text-align: center;
   margin-bottom: 2.5em;
-  margin: .5rem 1rem;
+  margin: .5rem 0rem;
   padding-right: 0;
   padding-left: 0; }
 
@@ -3042,10 +3046,10 @@ li {
 
 .m-sentenceCatFeaturedBorder {
   text-align: center;
-  border: 2px solid lightgrey;
-  margin: .3rem 1rem; }
+  border: 1px solid lightgrey;
+  margin: .3rem 0rem; }
   .m-sentenceCatFeaturedBorder:hover {
-    border: 2px solid #46b193; }
+    border: 1px solid #46b193; }
 
 .m-sentenceCatFeaturedPricing {
   font-family: "Work Sans", sans-serif;
