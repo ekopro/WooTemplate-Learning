@@ -2897,11 +2897,15 @@ li {
   .m-sentenceBlockJoinImg {
     width: 100%; } }
 
+.m-sentenceBlockCatLink {
+  margin: 4rem .7rem; }
+
 .m-sentenceCatBestSaleBorder {
   text-align: center;
-  border: 1px solid lightgrey; }
+  border: 2px solid lightgrey;
+  margin: 0.4rem 1rem; }
   .m-sentenceCatBestSaleBorder:hover {
-    border: 1px solid #46b193; }
+    border: 2px solid #46b193; }
 
 .m-sentenceCatBestSaleTitle {
   font-family: "Work Sans", sans-serif;
@@ -2952,6 +2956,7 @@ li {
   background-color: #46b193;
   text-align: center;
   margin-bottom: 2.5em;
+  margin: .5rem 1rem;
   padding-right: 0;
   padding-left: 0; }
 
@@ -3021,9 +3026,10 @@ li {
 
 .m-sentenceCatFeaturedBorder {
   text-align: center;
-  border: 1px solid lightgrey; }
+  border: 2px solid lightgrey;
+  margin: .3rem 1rem; }
   .m-sentenceCatFeaturedBorder:hover {
-    border: 1px solid #46b193; }
+    border: 2px solid #46b193; }
 
 .m-sentenceCatFeaturedPricing {
   font-family: "Work Sans", sans-serif;
@@ -3123,7 +3129,7 @@ li {
 
 .m-sentenceReviewImg {
   border-radius: 100%;
-  width: 35%;
+  width: 50%;
   display: block;
   margin: 1rem auto;
   border: 5px solid white; }
@@ -3146,21 +3152,21 @@ li {
 .m-sentenceReviewName {
   padding: .5em;
   color: #46b193;
-  font-size: 1.5rem; }
+  font-size: 1rem; }
 
 .m-sentenceReviewTitle {
   font-family: "Work Sans", sans-serif;
   font-weight: 900;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   text-align: center;
-  margin: 4rem 0; }
+  margin: 1rem 4rem 0; }
 
 .m-sentenceReviewText {
   color: #46b193; }
 
 .m-sentenceReviewAticle {
   padding: 0 1rem;
-  font-size: 1.3rem; }
+  font-size: 1.2rem; }
 
 .m-sentenceReviewIcon {
   padding: 1rem;

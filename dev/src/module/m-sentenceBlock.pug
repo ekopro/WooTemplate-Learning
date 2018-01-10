@@ -9,10 +9,10 @@ div(class="m-sentenceBlock")
   div(class = "m-sentenceBlockJoin")
     img(src = require("./img/big_img1.jpg") class="m-sentenceBlockJoinImg")  
     button(class="m-sentenceBlockJoinButton button-green" id="m-sentenceBlockJoinButton") Join now
-
-  +block("Best","#",require("./img/banner_bg1-1.jpg"))
-  +block("Food","#",require("./img/banner_bg2-1.jpg"))
-  +block("Sale","#",require("./img/banner_bg3-1.jpg"))
+  div(class="m-sentenceBlockCatLink")
+    +block("Best","#",require("./img/banner_bg1-1.jpg"))
+    +block("Food","#",require("./img/banner_bg2-1.jpg"))
+    +block("Sale","#",require("./img/banner_bg3-1.jpg"))
 
   div(class="row")
     div(class="col-xs-12 col-sm-4 col-md-4 col-lg-4")
