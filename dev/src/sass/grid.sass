@@ -6,9 +6,9 @@ $device-lg: 1200px
 =colBase($colName,$elementsQuantity)
   @for $i from 1 to $elementsQuantity+1
     .#{$colName}-#{$i}
-      -ms-flex-preferred-size: percentage(1/$elementsQuantity * $i)
+      // -ms-flex-preferred-size: percentage(1/$elementsQuantity * $i)
       flex-basis: percentage(1/$elementsQuantity * $i)
-      max-width: percentage(1/$elementsQuantity * $i)
+      // max-width: percentage(1/$elementsQuantity * $i)
 
 .container
   //center block
