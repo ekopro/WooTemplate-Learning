@@ -8,7 +8,7 @@
 @font-face {
   font-family: 'FontAwesome';
   src: url(../fonts/674f50d287a8c48dc19ba404d20fe713.eot);
-  src: url(../fonts/674f50d287a8c48dc19ba404d20fe713.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(../fonts/af7ae505a9eed503f8b8e6982036873e.woff2) format("woff2"), url(../fonts/fee66e712a8a08eef5805a46892932ad.woff) format("woff"), url(../fonts/b06871f281fee6b241d60582ae9369b9.ttf) format("truetype"), url(../fonts/912ec66d7572ff821749319396470bde.svg#fontawesomeregular) format("svg");
+  src: url(../fonts/674f50d287a8c48dc19ba404d20fe713.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(../fonts/af7ae505a9eed503f8b8e6982036873e.woff2) format("woff2"), url(../fonts/fee66e712a8a08eef5805a46892932ad.woff) format("woff"), url(../fonts/b06871f281fee6b241d60582ae9369b9.ttf) format("truetype"), url(../fonts/acf3dcb7ff752b5296ca23ba2c7c2606.svg#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2601,7 +2601,7 @@
     flex-grow: 1;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
-    max-width: 100%; }
+    max-width: 1600px; }
   .center-lg {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -2890,6 +2890,10 @@ li {
   .m-sentenceCatBestSaleBorder:hover {
     border: 1px solid #46b193; }
 
+.m-sentenceCatBestSaleImg {
+  width: 80%;
+  padding: 2em; }
+
 .m-sentenceCatBestSaleTitle {
   font-family: "Work Sans", sans-serif;
   font-weight: 900;
@@ -3045,6 +3049,10 @@ li {
   display: block;
   margin: 1rem auto; }
 
+.m-sentenceCatFeaturedImg {
+  width: 80%;
+  padding: 2em; }
+
 .m-sentenceBlog {
   margin-left: .5rem;
   margin-right: .5rem;
@@ -3068,13 +3076,16 @@ li {
 
 .m-sentenceBlogAnimation {
   position: absolute;
-  height: 100%;
+  height: 50%;
   top: 50%;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 99;
   transition: all 0.3s ease; }
+
+.m-sentenceBlogImg {
+  width: 90%; }
 
 .m-sentenceBlogTitle {
   font-family: "Work Sans", sans-serif;

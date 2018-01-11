@@ -16,10 +16,10 @@ div
       -var priceDis = val[2] 
       -var price = val[1] 
       li(class="m-sentenceCatBestSaleBorder col-xs-12 col-sm-6 col-md-3 col-lg-3")
-        img(src=("./img/" + imageName))
+        img(class="m-sentenceCatBestSaleImg" src=("./img/" + imageName))
         span(class="m-sentenceCatBestSalePricing")
           span(class="m-sentenceCatBestSalePrice")=price
           span(class="m-sentenceCatBestSalePriceDis")=priceDis 
-        button(class="button-green m-sentenceCatBestSaleButton") 
-          span(class="fa fa-shopping-cart")  Add to cart
-        include m-buttonCompareFav.pug
+          button(class="button-green m-sentenceCatBestSaleButton") 
+            span(class="fa fa-shopping-cart")  Add to cart
+          include m-buttonCompareFav.pug
