@@ -3113,17 +3113,32 @@ li {
 
 .m-sentenceBlogContainerImg {
   position: relative;
+  overflow: hidden;
   margin-bottom: 1rem; }
+  .m-sentenceBlogContainerImg:hover .m-sentenceBlogImg {
+    transform: scale(1.1); }
+  .m-sentenceBlogContainerImg:hover .m-sentenceBlogAnimation {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    border: 2em solid rgba(255, 255, 255, 0.3); }
 
 .m-sentenceBlogAnimation {
   position: absolute;
-  height: 100%;
-  top: 50%;
+  visibility: hidden;
+  box-shadow: 0 0 70px 200px rgba(255, 255, 255, 0.5);
+  z-index: 99;
+  margin: auto;
+  height: 40%;
+  width: 40%;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 99;
-  transition: all 0.3s ease; }
+  transition: all 0.7s ease; }
+
+.m-sentenceBlogImg {
+  transition: all 0.7s ease; }
 
 .m-sentenceBlogTitle {
   font-family: "Work Sans", sans-serif;
