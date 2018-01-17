@@ -16,7 +16,11 @@ div
       -var imageName = val[0] 
       -var catName = val[1] 
       -var className = val[2]
-      li(class="col-xs-12 col-sm-6 col-md-3 col-lg-3 m-sentenceCatProductBlock m-sentenceCatProductBlock" + className)
-        img(class="m-sentenceCatProductImg m-sentenceCatProductImg"+className src=("./img/" + imageName))
-        span(class="m-sentenceCatProductName")=catName 
-        button(class="m-sentenceCatProductButton m-sentenceCatProductButton" +className) # product
+      li(class="col-xs-12 col-sm-6 col-md-3 col-lg-3 m-sentenceCatProductBlock")
+        div(class="m-sentenceCatProductContainerImg")
+          img(class="m-sentenceCatProductImg m-sentenceCatProductImg"+className src=("./img/" + imageName))    
+          span(class="m-sentenceCatProductAnimBorder")
+          span(class="m-sentenceCatProductAnimBorderBottom")
+        div(class="m-sentenceCatProductBlock" + className)
+          span(class="m-sentenceCatProductName")=catName 
+          button(class="m-sentenceCatProductButton m-sentenceCatProductButton" +className) # product
