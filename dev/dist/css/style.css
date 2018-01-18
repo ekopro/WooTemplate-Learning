@@ -3191,10 +3191,8 @@ li {
 
 .m-sentenceBlogAnimation {
   position: absolute;
-<<<<<<< HEAD
   height: 50%;
   top: 50%;
-=======
   opacity: 0;
   box-shadow: 0 0 70px 200px rgba(255, 255, 255, 0.5);
   z-index: 99;
@@ -3202,17 +3200,14 @@ li {
   height: 40%;
   width: 40%;
   top: 0;
->>>>>>> f127d4da6c9042fc02db8d0caa3bb68cdd5f7894
   bottom: 0;
   left: 0;
   right: 0;
   transition: all 0.5s ease; }
 
 .m-sentenceBlogImg {
+  width: 90%;
   transition: all 0.5s ease; }
-
-.m-sentenceBlogImg {
-  width: 90%; }
 
 .m-sentenceBlogTitle {
   font-family: "Work Sans", sans-serif;
