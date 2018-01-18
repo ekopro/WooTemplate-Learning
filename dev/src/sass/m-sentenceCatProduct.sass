@@ -10,12 +10,30 @@
 
 
 .m-sentenceCatProductBlock
-  background-color: $lightGreen-color
+  // background-color: $lightGreen-color
   text-align: center
   margin-bottom: 2.5em
   margin: .5rem 0rem
   padding-right: 0
   padding-left: 0
+  position: relative
+  &:hover .m-sentenceCatProductContainerImg
+    opacity: 0.8
+  &:hover .m-sentenceCatProductBlockDog,
+  &:hover .m-sentenceCatProductBlockCats,
+  &:hover .m-sentenceCatProductBlockBirds,
+  &:hover .m-sentenceCatProductBlockPets,
+  &:hover .m-sentenceCatProductButtonDog,
+  &:hover .m-sentenceCatProductButtonCats,
+  &:hover .m-sentenceCatProductButtonBirds,
+  &:hover .m-sentenceCatProductButtonPets
+    background-color: grey
+  &:hover .m-sentenceCatProductAnimBorder:after
+      width: 100%
+      height: 2px
+  &:hover .m-sentenceCatProductAnimBorderBottom:before
+      width: 18%
+      height: 8px
 
 .m-sentenceCatProductButton
   background-color: transparent
@@ -64,13 +82,45 @@
 .m-sentenceCatProductImgPets
   +m-border($lightBlue-color)
 
-.m-sentenceCatProductBlockDog,
-.m-sentenceCatProductBlockCats,
-.m-sentenceCatProductBlockBirds,
-.m-sentenceCatProductBlockPets,
-.m-sentenceCatProductButtonDog,
-.m-sentenceCatProductButtonCats,
-.m-sentenceCatProductButtonBirds,
-.m-sentenceCatProductButtonPets
-  &:hover
-    background-color: grey
+
+.m-sentenceCatProductAnimBorder
+  display: block
+  position: relative
+  top: 65%
+  &:after
+      background-color: $lightGreen-color
+      display: block
+      content: ""
+      height: 0px
+      width: 0%
+      left: 50%
+      position: absolute
+      -webkit-transition: all .4s ease-in-out
+      -moz--transition: all  .4s ease-in-out
+      transition: all  .4s ease-in-out
+      -webkit-transform: translateX(-50%)
+      -moz-transform: translateX(-50%)
+      transform: translateX(-50%)
+
+.m-sentenceCatProductAnimBorderBottom
+  display: block
+  position: relative
+  top: 65%
+  z-index: 99
+  &:before
+      background-color: $lightGreen-color
+      display: block
+      content: ""
+      height: 0px
+      width: 0%
+      left: 50%
+      position: absolute
+      z-index: 999
+      -webkit-transition: all .4s ease-in-out
+      -moz--transition: all .4s ease-in-out
+      transition: all .4s ease-in-out
+      -webkit-transform: translateX(-50%)
+      -moz-transform: translateX(-50%)
+      transform: translateX(-50%)
+  &:hover:before
+        width: 20%
