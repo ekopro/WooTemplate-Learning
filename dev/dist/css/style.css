@@ -2783,6 +2783,18 @@ li {
   text-align: center;
   margin-bottom: 3rem; }
 
+@media only screen and (min-width: 768px) {
+  .m-social {
+    position: absolute;
+    left: 65%;
+    top: 15%; } }
+
+@media only screen and (min-width: 992px) {
+  .m-social {
+    position: absolute;
+    left: 75%;
+    top: 15%; } }
+
 .m-socialIconEl {
   display: inline-block;
   padding: 1.1rem; }
