@@ -2880,10 +2880,19 @@ li {
 .m-sentenceBlockCatLink {
   margin: 1rem 0rem; }
 
+.m-sentenceBlockBest:hover,
+.m-sentenceBlockFood:hover,
+.m-sentenceBlockSale:hover {
+  opacity: 0.7; }
+
 .m-sentenceBlockArrivals,
 .m-sentenceBlockFavorite,
 .m-sentenceBlockShipping {
   margin-bottom: 1rem; }
+  .m-sentenceBlockArrivals:hover,
+  .m-sentenceBlockFavorite:hover,
+  .m-sentenceBlockShipping:hover {
+    opacity: 0.7; }
 
 @media only screen and (min-width: 768px) {
   .m-sentenceBlockFavorite,
