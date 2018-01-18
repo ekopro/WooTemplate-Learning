@@ -2330,7 +2330,8 @@
 
 .container {
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  width: 99%; }
 
 .row {
   box-sizing: border-box;
@@ -2432,8 +2433,6 @@
   max-width: 100%; }
 
 @media only screen and (min-width: 768px) {
-  .container {
-    width: 768px; }
   .col-sm,
   .col-sm-1,
   .col-sm-2,
@@ -2503,8 +2502,6 @@
     max-width: 100%; } }
 
 @media only screen and (min-width: 992px) {
-  .container {
-    width: 992px; }
   .col-md,
   .col-md-1,
   .col-md-2,
@@ -2574,8 +2571,6 @@
     max-width: 100%; } }
 
 @media only screen and (min-width: 1200px) {
-  .container {
-    width: 99%; }
   .col-lg,
   .col-lg-1,
   .col-lg-2,
