@@ -1,21 +1,26 @@
+
 .m-arrow
-  position: fixed
-  z-index: 999
-  background-color: red
-  width: 55px
-  height: 50px
-  text-align: center
-  line-height: 4rem
-  background-color: white
-  border: 2px solid $lightGreen-color
-  left: 95%
-  top: 90%
-  &:hover
-    background: $lightGreen-color
-  &:hover .m-arrowUpDown
-    color: white
+  display: none 
+
+@media only screen and (min-width:540px)
+  .m-arrow
+    position: fixed
+    z-index: 999
+    background-color: red
+    width: 55px
+    height: 50px
+    text-align: center
+    line-height: 4rem
+    background-color: white
+    border: 2px solid $lightGreen-color
+    left: 95%
+    top: 90%
+    &:hover
+      background: $lightGreen-color
+    &:hover .m-arrowUpDown
+      color: white
 
 
-.m-arrowUpDown
-  font-size: 2rem
-  color: $lightGreen-color
+  .m-arrowUpDown
+    font-size: 2rem
+    color: $lightGreen-color
